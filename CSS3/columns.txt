@@ -1,0 +1,75 @@
+A propriedade Column serve para definir o tamanho (column-width) e a quantidade (column-count) de coluna em um determinado elemento.
+
+Essa propriedade não é nativa porém é necessário definir o brownser que iremos utilizar,
+
+Exemplo:
+Chrome: -webkit-columns: 100px 3;
+Firefox: -moz-columns: 100px 3;
+Opera: -o-columns: 100px 3;
+
+OU 
+
+columns: 100px 3;
+
+
+---------------------------------------------------------------------------------------
+
+
+Exemplo de utilização no chrome:
+
+div{
+    -webkit-column-count: 3;
+    -webkit-column-width: 100px;
+}
+
+OU
+
+div{
+    -webkit-columns: 100px 3;
+}
+
+Quer dizer que estamos utilizando 3 colunas em uma div e cada coluna tem um tamanho de 100px de altura e largura.
+
+
+Fontes para maiores informações:
+
+https://www.w3schools.com/cssref/css3_pr_columns.asp
+
+
+---------------------------------------------------------------------------------------
+
+Column-gap, é o espaço entre cada uma coluna e outra.
+
+Exemplo: 
+
+column-gap: 40px;
+
+Quer dizer que teremos 40px de distância entre uma coluna e outra.
+
+---------------------------------------------------------------------------------------
+
+
+column-rule, especifica a largura e estilo de espçao entre uma coluna e outra
+
+column-rule: 4px solid red;
+
+Quer dizer que iremos colocar uma borda de 4px de cor vermelha entre as colunas.
+
+
+---------------------------------------------------------------------------------------
+
+
+//Comando completo
+column-rule: 4px solid red;
+
+//Somente o formato da borda
+column-rule-style: dashed;
+
+//Somente a cor da borda
+column-rule-color: red;
+
+//Somente a largura da borda
+column-rule-width: 10px;
+
+
+OBS: entre os quatros comando a cima o primeiro defini os atributos todos em um só, porém é possivel alterar o atributos de forma separada.
