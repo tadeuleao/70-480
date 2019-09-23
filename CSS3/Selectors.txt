@@ -1,0 +1,71 @@
+Selector, o próprio nome já diz quer dizer seleção de um determinado elemento ou estrutura do HTML com objetivo de formatar um elemento ou vários elementos.
+
+Exemplo básico de um seletor 'simples':
+
+----- HTML -----
+<div class='primeiro-elemento'>
+	Minha div
+</div>
+
+----- CSS -----
+
+.primeiro-elemento{
+	color: #000;	
+}
+
+a esttrurua do CSS é divido em 3 partes básica, segue abaixo:
+
+selector: primeiro-elemento;
+propriedade: color;
+valor: #000;
+
+--------------------------------------------------------------------------------------
+
+Resumindo utilizamos o selector no CSS para identificar qual elemento iremos manipular, onde utilizamos os seletores que podem ser por ID, CLASSE ou até mesmo a tag dos elementos do HTML.
+
+Podemos aplicar seletores das seguintes formas: 
+
+
+1 - simples			: #elemento {color: red} , seletor por id chamado "elemento"
+						
+								<a id="elemento">Meu texto</a>
+
+2 - encadeado		: div p strong a {color: red} , dessa forma iremos formatar a cor do texto do elemento "<a>" somente que for filho de uma tag <div> - <p> - <strong> 
+						
+								<div>
+									<p>
+										<strong>
+											<a>Alteração de cor do link</a>
+										</strong>								
+									</p>
+								</div>
+
+3 - agrupados		: a, p, strong {color: red} , quando são seprados por "," irá formatar a cor de todos os textos que contiverem as tags "A","P" e "STRONG".
+						
+								<a>Alteracao da cor</a>
+								<p>Alteracao da cor</p>
+								<strong>Alteracao da cor</strong>
+
+4 - complexos		:	p a:first-child {color: red}, dessa forma irá formatar somente o primeiro elemento <a> do pai <p>
+
+								<p>
+									<a>Alteracao da cor</a>
+									<a>Alteracao da cor</a>
+									<a>Alteracao da cor</a>
+									<a>Alteracao da cor</a>
+								</p>
+
+Para os seletores complexos é possível definir várias regras de seleção como exemplo somente o primeiro elemento após um <h1> ":first-child" (pseudo-classe) ou somente o ultimo após um <h1> ":last-child"(pseudo-classe) entre outras regras.
+É necessário estudo a parte pois são várias regras possíveis e não faz sentido colocar todas aqui.
+
+
+[disabled] 				= formata todos os elementos que estão com o status de "disabled"
+[type='button']		= formata todos os elementos do tipo button
+:nth-child(2)			= formata o segundo elemento filho do elemento pai
+
+
+alguma fontes onde é possível encontrar mais informações:
+https://www.w3.org/TR/selectors-3/#selectors 	
+https://tableless.com.br/seletores-complexos-do-css/
+https://tableless.github.io/iniciantes/manual/css/seletores-complexos.html
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores
