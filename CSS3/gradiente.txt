@@ -1,0 +1,48 @@
+Grandiente é uma propriedade do CSS para estilizar o background dos elementos, onde é definido um direção ou angulo e no minimo duas cores.
+
+Obs: não funciona no internet explorer e cada browser tem sua chamada especifica.
+
+Para funcionamento no Chrome: -webkit-linear-gradient(cor1 , cor2)
+Para funcionamento no Opera: -o-linear-gradient(cor1 , cor2)
+Para funcionamento no Firefox : -moz-linear-Grandient(cor1 , cor2)
+Repare que mudou somente o inicio de cada comando.
+
+OU 
+
+linear-gradient(cor1, cor2)
+
+Realizei um teste no internet explorer 11 com o comando a cima e funcionou o grandiente, mas a informação no material de estudo informa que não funciona nas versões anteriores.
+
+-------------------------------------------------------------------------------------
+
+Sintaxe do comando, vamos exemplificar para o Chrome:
+background-image: -webkit-linear-gradient(dierecao ou angulo, cor1, cor2, ...);
+
+direção:
+top, left, right e bottom
+
+A direção do comando não é obrigatório se não for definida a direção ele irá utilizar como default "top".
+
+--------------------------------------------------------------------------------------
+
+Tambem é possível definir o comportamento do gradiente adicionando um percentual para cada cor, no exemplo abaixo
+definimos que a cor secundaria terá 20% 
+
+background-image:  -webkit-linear-gradient(red , green 20%);
+
+Exemplo de aplicação real, onde faço um quadrado e realizando o gradiente no elemento:
+
+div{
+    width: 100px;
+    height: 100px;
+    background-image:  -webkit-linear-gradient(red , green );
+    background-image: -o-linear-gradient(red , green);
+    background-image: -moz-linear-gradient(red , green);
+}
+
+
+Existem diversos modelos de grandiente, segue abaixo fontes para maiores informações:
+
+https://www.w3schools.com/css/css3_gradients.asp
+
+
