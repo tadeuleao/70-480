@@ -1,0 +1,66 @@
+Especificidade em CSS quer dizer a ordem em que são formatados os elementos de acordo com o seu estilo, em resumo prioridades de formatação
+
+Regras:
+
+1 - !important - tem prioridade em cima dos demais 
+2 - seletores mais especificos 
+3 - ultima regra processada
+
+Ou seja o uso do !important é uma excessão, pois não é boa prática utilizar.
+
+Exemplo do uso:
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+!important - Dessa forma qualquer elemento que for uma <div> será de cor vermelha, pois a cor principal foi definida como prioridade alta.
+
+div {
+    color: red !important;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Seletores mais especificos - O seletor que for mais especifico será de prioridade maior, repare que o segundo é mais especifico que o primeiro
+
+.classe {
+    color: red;
+}
+
+div.classe{
+    color:green;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Ultimo processado - Se as prioridades forem empatadas ele irá como critério de desempate o ultimo processado, repare que a div com a cor vermelha 
+é primeira e segue a mesma especificação da segunda, porém a segunda será processada após pois o css como o próprio nome ja diz (cascade style sheat)
+ele é processado de forma em cascata.
+
+div {
+    color: red;
+}
+
+div {
+    color: green;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Outras regras são o id tem prioridade sobre classe, segue exemplo abaixo
+
+<div classe="teste" id="alterado"></div>
+<div classe="teste"></div>
+<div classe="teste"></div>
+
+.teste{
+    color:red;
+}
+
+#alterado{
+    color:green;
+}
+
+
+Dessa forma a tag <div> que tem o id no css ela tem prioridade mesmo sendo declarado no css embaixo da classe então a primeira div será verde e 
+as demais vermelhas.
+
+
+fontes adicionais
+
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity
