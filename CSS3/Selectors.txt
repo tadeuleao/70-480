@@ -30,13 +30,15 @@ Podemos aplicar seletores das seguintes formas:
 						
 								<a id="elemento">Meu texto</a>
 
-2 - encadeado		: div p strong a {color: red} , dessa forma iremos formatar a cor do texto do elemento "<a>" somente que for filho de uma tag <div> - <p> - <strong> 
+2 - encadeado		: div p strong a {color: red} , dessa forma iremos formatar a cor do texto do(s) elemento(s) "<a>" que for descendente de uma tag <div> - <p> - <strong> 
 						
 								<div>
 									<p>
 										<strong>
 											<a>Alteração de cor do link</a>
+											<a>Alteração de cor do link</a>
 										</strong>								
+										<a>Não é alterado pois não é descendente de strong</a>
 									</p>
 								</div>
 
@@ -46,7 +48,7 @@ Podemos aplicar seletores das seguintes formas:
 								<p>Alteracao da cor</p>
 								<strong>Alteracao da cor</strong>
 
-4 - complexos		:	p a:first-child {color: red}, dessa forma irá formatar somente o primeiro elemento <a> do pai <p>
+4 - complexos		:	p a:first-child {color: red} , dessa forma irá formatar somente o primeiro elemento <a> do pai <p>
 
 								<p>
 									<a>Alteracao da cor</a>
@@ -54,6 +56,28 @@ Podemos aplicar seletores das seguintes formas:
 									<a>Alteracao da cor</a>
 									<a>Alteracao da cor</a>
 								</p>
+
+5 - Filho direto 	: 	div + p {color: red} , quer dizer que irá alterar somente a primeira tag <p> que for filha da div
+								<div>
+									<p>Essa vai ser alterada</p>
+									<p>Essa não vai ser alterada</p>
+								</div>
+
+6 - combinador geral:	div ~ p{color:red} , quer dizer que irá formatar todas as tags <p> que forem irmão da tag <div> 
+								<div></div>
+								<p>Vai ser formatada!</p>
+								<p>Vai ser formatada!</p>
+								<span>Não vai ser formatada</span>
+								<p>Vai ser formatada!</p>
+								<p>Vai ser formatada!</p>
+7 - filhos 			: 	div > p{color:red} , quer dizer que irá alterar todos os filhos da tag <div> que sejam <p>
+								<div>
+									<p>Essa vai ser alterada</p>
+									<p>Essa vai ser alterada</p>
+									<span>Essa não vai ser alterada</span>
+									<p>Essa vai ser alterada</p>
+								</div>
+
 
 Para os seletores complexos é possível definir várias regras de seleção como exemplo somente o primeiro elemento após um <h1> ":first-child" (pseudo-classe) ou somente o ultimo após um <h1> ":last-child"(pseudo-classe) entre outras regras.
 É necessário estudo a parte pois são várias regras possíveis e não faz sentido colocar todas aqui.

@@ -8,19 +8,20 @@
 		h2 , span , i{text-shadow: 1px 1px 1px red}		
 		div p:first-child{color: red}
 		h3 p:nth-child(2){color: red}
+		div + p{color: red}
+		.genenralSibling ~ p{color: red}
+		div > h2{color: green}
 
 	</style>
 </head>
 <body>
 
 	<div id="simples">Seletor simples</div>
-	<hr>
-	
+	<hr>	
 	<h2>Agrupado</h2>
 	<span>Agrupado</span>
 	<i>Agrupado</i>
 	<hr>
-
 	<div>
 		<p>Complexo Primeiro</p>
 		<p>Complexo Segundo</p>
@@ -33,6 +34,24 @@
 		<p>Complexo Terceiro</p>
 	</h3>
 	<hr>
+	<div>
+		<p>Essa vai ser alterada</p>
+		<p>Essa não vai ser alterada</p>
+	</div>
+	<hr>
+	<div class="genenralSibling"></div>
+	<p>A</p>
+	<p>B</p>
+	<h3>h3</h3>
+	<p>C</p>
+	<p>D</p>
+	<hr>
+	<div>
+		<h2>ALterado</h2>
+		<h5>Não alterado</h5>
+		<h2>ALterado</h2>
+		<h2>ALterado</h2>
+	</div>
 
 </body>
 </html>
