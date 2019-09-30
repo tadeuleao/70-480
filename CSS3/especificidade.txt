@@ -2,15 +2,16 @@ Especificidade em CSS quer dizer a ordem em que são formatados os elementos de 
 
 Regras:
 
-1 - !important - tem prioridade em cima dos demais 
+1 - !important - tem prioridade em cima dos demais ou Seletores inline
 2 - seletores mais especificos 
 3 - ultima regra processada
 
 Ou seja o uso do !important é uma excessão, pois não é boa prática utilizar.
+O seletor inline é quando definimos um estilo direto no elemento, ele tem prioridade sobre os demais, exemplo de uso:
 
-Exemplo do uso:
-
+<div style="color: red"></div>
 ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 !important - Dessa forma qualquer elemento que for uma <div> será de cor vermelha, pois a cor principal foi definida como prioridade alta.
 
 div {
@@ -64,3 +65,4 @@ as demais vermelhas.
 fontes adicionais
 
 https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity
+Calculadora de especificidade: https://specificity.keegan.st/
