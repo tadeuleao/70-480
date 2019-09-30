@@ -1,0 +1,36 @@
+Transform é uma propriedade para movimentar o objeto no eixo X e Y, como em alguns browswer não é nativo é necessário incluir o prefixo
+
+Exemplo: 
+
+-webkit-transform: skew(30deg); 
+-moz-transform: skew(30deg); 
+-o-transform: skew(30deg); 
+transform: skew(30deg); /* para browsers sem prefixo */
+
+- A propriedade "sken(30deg)" serve para determinar o angulo que será transformado o elemento.
+
+- Para aumentar o tamanho do elemento utiliza o elemento "scale(1)" onde o número 1 quer dizer a escala que será aplicado, segue exemplo:
+
+-webkit-transform: scale(1.5) skew(30deg); 
+-moz-transform: scale(1.5) skew(30deg); 
+-o-transform: scale(1.5) skew(30deg); 
+transform: scale(1.5) skew(30deg); /* para browsers sem prefixo */
+
+- Repare que está aplicando as duas propriedades em uma mesma sentença.
+- A transformação do objeto citado a cima sempre utiliza como ponto o centro o elemento, é possível definir o ponto de origem que a imagem será
+aplicado a transformação.
+
+-webkit-transform-origin: 10px 10px; 
+-moz-transform-origin: 10px 10px; 
+-o-transform-origin: 10px 10px; 
+transform-origin: 10px 10px; /* para browsers sem prefixo */
+
+- Está definindo que o ponto que irá utilizar para realizar a transformação é  a 10px da esquerda e 10px de cima, repare no "*" abaixo.
+
+Original               transform-origin: 10px 10px;
+---------                      ---------
+-       -                      -  *    -
+-   *   -                      -       -
+-       -                      -       -
+---------                      ---------
+

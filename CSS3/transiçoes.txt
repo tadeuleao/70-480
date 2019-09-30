@@ -1,0 +1,44 @@
+Transições serve para definir em qual tempo (Keyframe) será realizado/finalizado uma transformação de um seletor, exemplo:
+
+- Definimos que uma <div> tem uma cor de vermalha
+
+div{ background: red; }
+
+- Agora vamos aplicar uma transição para de forma brusca sem que aja uma efeito que mostra a transição
+
+div:hover{ background: black; }
+
+- Será aplicado a cor de forma brusca como preta, é possível definir um tempo para que essa troca de cor seja efetuada.
+
+
+Exemplo de aplicação com tempo de transição:
+
+div:hover{
+    background: black;
+    transition: 0.5s; /* AQUI É APLICADO A TRANSIÇÃO */
+}
+
+- Dessa forma ele irá aplicar toda a regra do seletor no tempo de 0.5 segundos
+
+- A propriedade de transition ela verifica como está o estado do elemento para aplicar, exemplo a pseudo-class ":hover" 
+é responsável por identificar quando o ponteiro do mouse está sob o elemento e então aplica a regra que está no seletor, 
+o transition identifica o que está no seletor para aplicar, a propriedade aplica somento o que está no seletor.
+
+Exemplo de aplicação:
+
+div{color: red ; font-size:40px}
+
+div:hover{color: black ; transition: 0.5s}
+
+Dessa forma irá somente aplicar a cor da fonte e não irá alterar o tamanho da fonte, pois ele identificou que a única alteração a ser
+realizada é a troca de cor. O código a cima temos dois eventos um sem estado e outro será aplicado o estado que o mouse passar por cima.
+Podemos aplicar o transition para os dois estados, pois ele só irá aplicar o efeito de transição quando o mouse passar por cima mas quando o 
+mouse sair do elemento ele irá voltar para o estado atual de forma brusca, para corrigir isso utilizamos o código abaixo:
+
+div{color: red ; font-size:40px; transition: 0.5s}
+
+div:hover{color: black ; transition: 0.5s}
+
+- Definimos o efeito de transição para os dois estados.
+
+

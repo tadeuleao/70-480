@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Transform</title>
+    <style>
+        #teste {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background: #ff0;
+            -webkit-transform: skew(30deg);            /* para webkit */
+            -moz-transform: skew(30deg);            /* para gecko */
+            -o-transform: skew(30deg);            /* para opera */
+            transform: skew(30deg);            /* para browsers sem prefixo */
+        }
+
+        #teste2 {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background: rgb(49, 7, 236);
+            -webkit-transform: scale(1.5) skew(30deg);            /* para webkit */
+            -moz-transform: scale(1.5) skew(30deg);            /* para gecko */
+            -o-transform: scale(1.5) skew(30deg);            /* para opera */
+            transform: scale(1.5) skew(30deg);            /* para browsers sem prefixo */
+            color: #fff;
+        }
+
+        #teste3 {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background: black;
+            transform-origin: 10px 10px;
+            -webkit-transform: scale(1.5) skew(30deg);            /* para webkit */
+            -moz-transform: scale(1.5) skew(30deg);            /* para gecko */
+            -o-transform: scale(1.5) skew(30deg);            /* para opera */
+            transform: scale(1.5) skew(30deg);            /* para browsers sem prefixo */
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="teste">TESTE TESTE TESTE TESTE TESTE</div>
+        <br>
+        <br>
+        <br>
+        <div id="teste2">TESTE TESTE TESTE TESTE TESTE</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="teste3">TESTE TESTE TESTE TESTE TESTE</div>
+    </div>
+
+</body>
+
+</html>
