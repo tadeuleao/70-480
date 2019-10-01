@@ -1,0 +1,22 @@
+No CSS é possível herdar propriedades de outros seletores, uma observação que tem algumas propriedades que já passam como herança de forma automática.
+
+Para herdar utiliza a palavra "inherit", exemplo
+
+body{
+    color: aqua ; /*Vai passar como herança*/
+    font-size: 40px; /*Vai passar como herança*/
+    border: 2px solid #000; /*Não passa como herança*/
+}
+
+div{
+    border: inherit; /*AQUI É REALIZADO A HERANÇA*/
+}
+
+<body>
+    <div>Meu texto</div>
+    <h1>Segundo texto</h1>
+</body>
+
+
+Resumindo a propriedade "border" não é passado como herança do body para os seus filhos de forma automática pelo brownser porém no seletor "div" 
+foi especificado que queremos herdar a propriedade "border" do seu pai;
