@@ -1,0 +1,39 @@
+A propriedade do display no CSS é para manipular os elementos como serão apresentados na tela.
+
+Segue lista das mais utilizadas:
+
+block: 
+
+- Faz com que o elemento que o aplica cria-se um bloco onde não permite nenhum elemento ao lado dele
+
+inline:
+
+- Faz com que o elemento fiquem em linha, comumente utilizado na tag <ul><li></li></ul>
+
+none:
+
+- Faz com que o elemento fique oculto
+
+inline-block:
+
+- Faz com que o elemento fique em linha mas criando um comportamento de bloco não permite elementos ao seu lado
+
+list-item:
+
+- Faz com que o elemento se comporte como uma lista
+
+table:
+
+- Faz com que o elemento comporta como uma tabela equivalente ao <table>
+
+table-cell , table-column , table-caption .....
+
+- Tem várias propriedades de display: table-XXX
+
+
+===============================================================================================================
+
+Fontes para estudos:
+
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/display
+https://www.w3schools.com/cssref/pr_class_display.asp
