@@ -2,6 +2,9 @@
 
 * HTML
 - type inputs
+- Geolocation
+- Canvas e SGV
+- Web Works
 
 *JS
 - Prototype
@@ -20,3 +23,15 @@
 - Iframe
 - Expressão regulares
 - XMLHTTPRequest
+- JSON.Stringify
+- serialize 
+- Ajax
+- Herança
+
+
+
+Porcetagem da prova de acordo com experiencia de outros usuários:
+
+- 52 questões
+- 10% HTML , 40% CSS , 40% Javascript
+- 2 horas de prova
