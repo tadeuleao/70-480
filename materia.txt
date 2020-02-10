@@ -1,0 +1,22 @@
+* CSS
+
+* HTML
+- type inputs
+
+*JS
+- Prototype
+- WebSockets
+- Web Worker
+- Jquery
+- Função Anonimas
+- Escopo
+- Array
+- try catch
+- local storage / Session storage
+- Objetos window, document
+- AddEventListener
+- onload
+- Eval
+- Iframe
+- Expressão regulares
+- XMLHTTPRequest
