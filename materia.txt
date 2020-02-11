@@ -5,6 +5,7 @@
 - Geolocation
 - Canvas e SGV
 - Web Works
+- Listas
 
 *JS
 - Prototype
