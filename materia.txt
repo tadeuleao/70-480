@@ -5,6 +5,7 @@
 - Geolocation
 - Canvas e SGV
 - Web Works
+- XHTML e HTML
 
 *JS
 - Prototype
