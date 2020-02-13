@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Form > Fieldset >  pre com NOVALIDATE</h1>
+    <form action="" novalidate>
+        <fieldset>
+            <legend>Formulario 1</legend>
+            <pre>
+                Nome: <input type="email" name="nome">
+                Idade: <input type="text">
+                Sexo: <input type="email">
+                Endereço: <input type="text">
+                <input type="submit" value="Enviar">
+            </pre>            
+        </fieldset>
+    </form>  
+    <hr>
+    <h1>Select com size limitando a 3</h1>
+    <select name="cars" size="3">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+
+      <select name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <hr>
+      <h1>Validando Formuario</h1>
+      <form action="">
+        <input type="number" name="quantity" min="0" max="100" step="10" value="30">
+        <input type="email">
+       <input type="submit">
+      </form>
+
+      <form autocomplete="off">
+        Telephone Com expressao regular: 
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <input type="submit" value="Enviar">
+      </form>
+      <hr>
+      <h1>Formulario com auto complete</h1>
+      <form action="" autocomplete="on">
+
+        Nome: <input type="text" name="nome"> 
+        Nome: <input type="text" name="nome"> 
+        Nome: <input type="text" name="nome"> 
+      </form>
+      <hr>
+      <h1>Formulario com autofocus</h1>
+      <form action="">
+          NOme: <input type="text" autofocus>
+          NOme: <input type="text">
+          NOme: <input type="text">
+      </form>
+</body>
+</html>

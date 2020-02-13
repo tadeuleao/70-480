@@ -6,6 +6,7 @@
 - Canvas e SGV
 - Web Works
 - Listas
+- XHTML e HTML
 
 *JS
 - Prototype
