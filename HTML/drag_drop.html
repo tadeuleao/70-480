@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag e Drop</title>
+</head>
+<body>
+    <h1>Drag e Drop</h1>
+    <div id="dropar" style="border: 1px solid #000; width: 300px ; height: 300px;"ondrop="soltar(event)" ondragover="allowDrop(event)">
+        <img src="../IMG/picture.jpg" alt="Não foi possível mostrar imagem" draggable="true" id="imagem" ondragstart="arrastar(event)">
+    </div>
+    
+
+    <hr>
+
+    <div id="dropar2" style="border: 1px solid #000; width: 300px ; height: 300px;" ondrop="soltar(event)" ondragover="allowDrop(event)"></div>
+
+</body>
+
+<script src="../JS/drag_drop.js"></script>
+</html>
