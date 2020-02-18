@@ -11,7 +11,8 @@
 *JS
 - Prototype
 - WebSockets
-- Web Worker
+- Web Worker: como se fosse uma thread
+- SSE: (Server Send Events) Fica recebendo atualização do servidor 
 - Jquery
 - Função Anonimas
 - Escopo
