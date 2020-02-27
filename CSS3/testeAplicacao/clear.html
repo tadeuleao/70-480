@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear</title>
+
+    <style>
+        .texto1{
+            float: left;
+            border: 1px solid #000;
+            width: 100px;
+        }
+        .texto2{
+            clear: left;
+            border: 1px solid red;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Clear</h1>
+
+   
+        <div class="texto1">
+            Div com elemento flutuante a esquerda
+        </div>
+        <div class="texto2">
+            Div com flex a esquerda
+        </div>    
+        
+        <hr>
+
+        <p>Como se pode ver como tem uma div flutuante a esquerda a div de baixo teria que se encaixar ao lado dela, porém 
+            com o flex habilitado a esquerda e valida se existe um elemento a esquerda e pula para a linha de baixo, o mesmo
+            aconteceria se tivesse um elemento flutuante a direita e o flex habilitado a direira
+        </p>
+
+</body>
+</html>
